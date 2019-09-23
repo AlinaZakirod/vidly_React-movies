@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Movies from "./components/movieCell";
+import Movies from "./components/movie";
 import ListGroup from "./components/common/listGroup";
 
 class App extends Component {
   render() {
     return (
       <main className="container">
-        <ListGroup />
         <Movies />
       </main>
     );
