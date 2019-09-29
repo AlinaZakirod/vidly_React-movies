@@ -32,16 +32,22 @@ class MoviesTable extends Component {
     }
   ];
 
+  newMovieUrl(props) {
+    console.log(props);
+  }
+
   render() {
     const { movies, onSort, sortColumn } = this.props;
 
     return (
-      <Table
-        columns={this.columns}
-        data={movies}
-        sortColumn={sortColumn}
-        onSort={this.onSort}
-      />
+      <React.Fragment>
+        <Table
+          columns={this.columns}
+          data={movies}
+          sortColumn={sortColumn}
+          onSort={this.onSort}
+        />
+      </React.Fragment>
     );
   }
 }
